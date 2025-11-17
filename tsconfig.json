@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "esnext",
-    "lib": ["ESNext", "DOM"],
+    "target": "ES2020",
+    "module": "ESNext",
     "outDir": "./dist",
-
-    /* Bundler mode */
-    // "moduleResolution": "bundler",
-    // "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-  }
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
