@@ -16,18 +16,6 @@ class Stack<T> {
     isEmpty(): boolean {
         return this.items.length === 0;
     }
-
-    size(): number {
-        return this.items.length;
-    }
-
-    clear(): void {
-        this.items = [];
-    }
-
-    toString(): string {
-        return this.items.toString();
-    }
 }
 
 export function solve(text: string): boolean {
